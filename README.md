@@ -1,43 +1,37 @@
-# Polymarket Bot
+# Polymarket Automation Engine
 
-## Project Overview
-The Polymarket Bot is a trading bot designed to interact with the Polymarket platform, facilitating automated trades based on market conditions. It utilizes advanced algorithms to optimize trading strategies and enhance user experience.
+Python-based automation framework for monitoring and interacting with Polymarket hourly markets.
 
-## Setup Instructions
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/jovonallen/polymarket-bot.git
-   ```
-2. **Navigate to the project directory:**
-   ```bash
-   cd polymarket-bot
-   ```
-3. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-4. **Configure environment variables:**
-   Create a `.env` file in the root directory and set the following variables:
-   ```
-   POLYMARKET_API_KEY=your_api_key
-   ```
+## Overview
 
-## Features
-- Automated trading based on real-time market data.
-- User-friendly configuration options.
-- Detailed logging of trades and performance.
-- Support for various trading strategies.
+This project is an ongoing development focused on building a structured, risk-controlled trading automation system rather than discretionary execution.
 
-## Configuration Guide
-Edit the `.env` file to customize your bot's settings. Key configuration options include:
-- `POLYMARKET_API_KEY`: Your API key for Polymarket access.
-- `TRADE_STRATEGY`: The trading strategy to employ (e.g., "arbitrage", "market making").
+The system integrates market monitoring, position management, and performance analytics into a modular architecture.
 
-## Usage Examples
-To start the bot, run the following command:
-```bash
-npm start
-```
-The bot will begin executing trades based on the configured strategy. Check the logs for real-time updates on trades executed.
+## Current Features
 
-For more detailed usage, refer to the documentation within the repository or the Wiki page.
+- Real-time market data monitoring
+- Position tracking logic
+- Configurable risk management (fixed % risk per trade)
+- Performance metrics tracking:
+  - Win rate
+  - Max drawdown
+  - Sharpe ratio
+- Telegram bot integration for monitoring and control
+- Modular strategy structure
+
+## In Development
+
+- Execution refinement
+- Deployment optimization
+- Logging & analytics expansion
+- Strategy testing framework
+
+## Design Philosophy
+
+- Risk control before profit targeting
+- Metrics-driven evaluation
+- Automation over emotional decision-making
+- Modular and scalable architecture
+
+⚠️ This project is experimental and intended for research and educational purposes.
